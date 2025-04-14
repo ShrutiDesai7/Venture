@@ -1,0 +1,305 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f9ff;
+    color: #222;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077cc;
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #004b80;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero .cta {
+    background: #0099ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px;
+    background: #e0f2ff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Sign-In Section */
+.signin-section {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-form input {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+.signin-form button {
+    background: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #001a33;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Courses Page Styles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.enroll-btn {
+    background: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+    background: #005fa3;
+}
+
+/* Application Page Styles */
+.application-container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.application-container h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.application-container select {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.application-container button {
+    background: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.application-container button:hover {
+    background: #005fa3;
+}
+
+/* Account Page Styles */
+.account-container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.account-details h2 {
+    margin: 0;
+    color: #0077cc;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background: #0077cc;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* Contact Page Styles */
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background: #005fa3;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
